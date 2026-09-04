@@ -1,0 +1,2 @@
+/* WALLEX TRON derivation policy and address generation. Fully local. */
+(()=>{'use strict';const path=(index=0)=>`m/44'/195'/0'/0/${index}`;async function address(privateKey){const pub=window.WallexSecp256k1.privateToPublic(privateKey,false),hash=window.WallexKeccak256.digest(pub.slice(1));return window.WallexBtc.base58check(window.WallexBtc.concat(Uint8Array.of(0x41),hash.slice(12)));}window.WallexTrx=Object.freeze({path,address});})();

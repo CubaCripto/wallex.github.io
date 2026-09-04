@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="wallex-splash-active">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; frame-src 'none'; form-action 'none'; script-src 'self' file:; style-src 'self' file:; img-src 'self' file: data: blob:; font-src 'self' file: data:; connect-src 'self' file: https: wss:; worker-src 'self' file: blob:; child-src 'self' file: blob:; manifest-src 'self' file:; media-src 'none'">
+  <title>WALLEX</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="wallex.css">
+</head>
+<body>
+  <div class="wallex-startup-splash" id="wallexStartupSplash" aria-hidden="true">
+    <div class="wallex-startup-lockup">
+      <div class="wallex-startup-name">WALLEX</div>
+      <div class="wallex-startup-motto">TRUST ONLY YOURSELF</div>
+    </div>
+  </div>
+  <main class="app">
+    <!-- La barra superior MAIN se integra en el conjunto desde wallex.js. -->
+    <section id="createPanelMount" aria-label="Create wallet"></section>
+  </main>
+
+  <script src="csprng.js"></script>
+  <script src="kdf.js"></script>
+  <script src="bip39-wordlist-en.js"></script>
+  <script src="bip39.js"></script>
+  <script src="secp256k1.js"></script>
+  <script src="bip32.js"></script>
+  <script src="keccak256.js"></script>
+  <script src="btc.js"></script>
+  <script src="bip85.js"></script>
+  <script src="eth.js"></script>
+  <script src="trx.js"></script>
+  <script src="bip84.js"></script>
+  <script src="aes256.js"></script>
+  <script src="bip38.js"></script>
+  <script src="wallex.js"></script>
+</body>
+</html>
